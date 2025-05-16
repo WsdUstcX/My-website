@@ -22,8 +22,15 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.paper {
+h2 {
   margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid #ccc;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 1.5em;
 }
