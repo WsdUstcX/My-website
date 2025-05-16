@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shouda.github.io/shouda-website/sitemap.xml
