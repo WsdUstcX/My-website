@@ -17,7 +17,7 @@
 
     <!--<a href="My_CV.pdf" target="_blank">CV</a>-->
     <p>Email: shoudawang@alumni.princeton.edu</p>
-    <p><a href="https://arxiv.org/search/?searchtype=author&amp;query=Wang%2C+Shouda">arXiv</a> / <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=XCesRLAAAAAJ">Google Scholar</a></p>
+    <p><a href="https://arxiv.org/search/?searchtype=author&amp;query=Wang%2C+Shouda">arXiv</a> | <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=XCesRLAAAAAJ">Google Scholar</a></p>
       </div>
     </div>
 
@@ -47,8 +47,11 @@
       </li>
     </ul>
 
-    <h2 id="ai-digestion-papers">AI digestion papers</h2>
-    <p>This section lists papers developed from proofs first obtained by AI models. My collaborators and I then checked, digested, rewrote the arguments, and generalized the results to make them more meaningful to a human audience. The papers in the previous section represent research in which most or all of the mathematical ideas were developed by my collaborators and me without AI assistance. The role of AI was largely limited to secondary tasks such as checking proofs, assisting with numerical exploration, finding references, fixing typos, etc. I began using LLMs in my research in summer 2026. Every preprint I have posted since then includes an AI disclosure paragraph.</p>
+    <div class="section-heading">
+      <h2 id="ai-digestion-papers">AI digestion papers</h2>
+      <button id="ai-details-toggle" class="details-toggle" type="button" aria-expanded="false" aria-controls="ai-explanation">More details</button>
+    </div>
+    <p id="ai-explanation" hidden>This section lists papers developed from proofs first obtained by AI models. My collaborators and I then checked, digested, rewrote the arguments, and generalized the results to make them more meaningful to a human audience. The papers in the previous section represent research in which most or all of the mathematical ideas were developed by my collaborators and me without AI assistance. The role of AI was largely limited to secondary tasks such as checking proofs, assisting with numerical exploration, finding references, fixing typos, etc. I began using LLMs in my research in summer 2026. Every preprint I have posted since then includes an AI disclosure paragraph.</p>
     <ul>
       <li>
         <strong>The Bézout inequality for mixed volumes characterizes simplices</strong>, joint with <a href="https://sites.google.com/view/dylanlangharst/">Dylan Langharst</a>, submitted, <a href="https://arxiv.org/abs/2609.20380">arXiv</a>
@@ -59,5 +62,15 @@
       </li>
     </ul>
   </div>
+  <script>
+    const aiDetailsButton = document.getElementById("ai-details-toggle");
+    const aiExplanation = document.getElementById("ai-explanation");
+    aiDetailsButton.addEventListener("click", () => {
+      const showExplanation = aiExplanation.hidden;
+      aiExplanation.hidden = !showExplanation;
+      aiDetailsButton.setAttribute("aria-expanded", String(showExplanation));
+      aiDetailsButton.textContent = showExplanation ? "Hide details" : "More details";
+    });
+  </script>
 </body>
 </html>
