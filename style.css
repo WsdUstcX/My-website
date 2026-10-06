@@ -1,11 +1,11 @@
 body {
   font-family: Georgia, serif;
-  max-width: 810px;
+  max-width: 850.5px;
   margin: auto;
   padding: 2.5em;
   background: #fdfdfd;
   color: #111;
-  font-size: 14.4px;
+  font-size: 15.12px;
   line-height: 1.5;
 }
 
@@ -50,8 +50,8 @@ li {
 
 .details-toggle {
   padding: 0.25em 0.6em;
-  border: 1px solid #b8c2cc;
-  border-radius: 3px;
+  border: 1.05px solid #b8c2cc;
+  border-radius: 3.15px;
   background: transparent;
   color: #004080;
   font: inherit;
@@ -64,6 +64,6 @@ li {
 }
 
 .details-toggle:focus-visible {
-  outline: 2px solid #004080;
-  outline-offset: 3px;
+  outline: 2.1px solid #004080;
+  outline-offset: 3.15px;
 }
