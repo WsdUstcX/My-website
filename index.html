@@ -49,7 +49,7 @@
 
     <div class="section-heading">
       <h2 id="ai-digestion-papers">AI digestion papers</h2>
-      <button id="ai-details-toggle" class="details-toggle" type="button" aria-expanded="false" aria-controls="ai-explanation">More details</button>
+      <button id="ai-details-toggle" class="details-toggle" type="button" aria-label="Show AI explanation" aria-expanded="false" aria-controls="ai-explanation">?</button>
     </div>
     <div id="ai-explanation" hidden>
       <p>This section lists papers developed from proofs first obtained by AI models. My collaborators and I then checked, digested, and rewrote the arguments and generalized the results to make them more meaningful to a human audience. We submit these papers for publication, not to claim credit for the proofs, but to have the work peer reviewed and help integrate the results into the shared mathematical knowledge of our research community, in the same spirit as Tao’s discussion in <a href="https://arxiv.org/abs/2608.16753">Mathematics in the age of AI</a>.</p>
@@ -73,7 +73,8 @@
       const showExplanation = aiExplanation.hidden;
       aiExplanation.hidden = !showExplanation;
       aiDetailsButton.setAttribute("aria-expanded", String(showExplanation));
-      aiDetailsButton.textContent = showExplanation ? "Hide details" : "More details";
+      aiDetailsButton.setAttribute("aria-label", showExplanation ? "Hide AI explanation" : "Show AI explanation");
+      aiDetailsButton.textContent = showExplanation ? "hide" : "?";
     });
   </script>
 </body>
