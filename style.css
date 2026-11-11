@@ -9,17 +9,9 @@ body {
   line-height: 1.5;
 }
 
-a,
-.journal-name {
-  color: #004080;
-}
-
 a {
+  color: #004080;
   text-decoration: none;
-}
-
-a.person-link {
-  color: inherit;
 }
 
 a:hover {
